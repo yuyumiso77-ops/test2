@@ -7,84 +7,120 @@
   <meta name="description" content="경기도 포천 식품·식자재 유통 전문 기업 CS FACTORY. 농산물, 축산·수산물, 가공식품 납품 문의.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- 상단 메뉴 -->
+  <!-- 상단 메뉴 (배너 위에 투명하게 떠 있다가 스크롤하면 흰색으로 바뀜) -->
   <header class="header">
     <div class="container header-inner">
-      <a href="#top" class="logo">CS <span>FACTORY</span></a>
+      <a href="#top" class="logo">
+        <span class="logo-mark">CS</span>
+        <span class="logo-text">FACTORY<small>식품 · 식자재 유통</small></span>
+      </a>
       <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
       <nav class="nav">
-        <a href="#about">회사 소개</a>
-        <a href="#services">취급 품목</a>
+        <a href="#about">회사소개</a>
+        <a href="#products">취급 품목</a>
         <a href="#why">강점</a>
-        <a href="#contact" class="nav-cta">문의하기</a>
+        <a href="#contact" class="nav-cta"><i></i>납품 문의</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- 메인 배너 -->
+    <!-- 메인 배너 슬라이드: images 폴더에 hero1.jpg, hero2.jpg, hero3.jpg를 넣으면 사진이 나옵니다 -->
     <section class="hero">
-      <div class="container">
-        <p class="eyebrow">식품 · 식자재 유통 전문</p>
-        <h1>신선한 식자재를<br>필요한 곳에, 제때에</h1>
-        <p class="hero-text">CS FACTORY는 식당, 급식, 식품 업체에<br class="pc-only"> 믿을 수 있는 식자재를 안정적으로 공급합니다.</p>
-        <div class="hero-buttons">
-          <a href="#services" class="btn btn-primary">취급 품목 보기</a>
-          <a href="#contact" class="btn btn-ghost">납품 문의</a>
+      <div class="slide is-active" style="--img: url('images/hero1.jpg'); --fallback: linear-gradient(135deg,#2f5d3a,#6c8f3d);">
+        <div class="container slide-text">
+          <p class="hero-kicker">신 선 한 &nbsp; 식 자 재</p>
+          <h1>좋은 재료가<br>좋은 음식을 만듭니다</h1>
+          <p class="hero-sub">매일 아침 주방을 여는 사장님의 마음으로,<br><b>CS FACTORY</b>가 식자재를 고릅니다</p>
         </div>
+      </div>
+      <div class="slide" style="--img: url('images/hero2.jpg'); --fallback: linear-gradient(135deg,#7a2e1d,#c2512c);">
+        <div class="container slide-text">
+          <p class="hero-kicker">약 속 한 &nbsp; 시 간</p>
+          <h1>필요한 곳에,<br>제때에 도착합니다</h1>
+          <p class="hero-sub">식당, 급식, 식품 업체의 하루가<br>멈추지 않도록 정시에 배송합니다</p>
+        </div>
+      </div>
+      <div class="slide" style="--img: url('images/hero3.jpg'); --fallback: linear-gradient(135deg,#1f3b4d,#3b6e78);">
+        <div class="container slide-text">
+          <p class="hero-kicker">한 곳 에 서 &nbsp; 한 번 에</p>
+          <h1>주방에 필요한 모든 것,<br>CS FACTORY 하나로</h1>
+          <p class="hero-sub">농산물부터 가공식품, 소모품까지<br>한 번의 주문으로 받아 보세요</p>
+        </div>
+      </div>
+
+      <div class="container hero-bottom">
+        <div class="dots" role="tablist" aria-label="배너 선택">
+          <button class="is-active" aria-label="1번 배너"></button>
+          <button aria-label="2번 배너"></button>
+          <button aria-label="3번 배너"></button>
+        </div>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-white">취급 품목 보기 <span>→</span></a>
+          <a href="#contact" class="btn btn-line">납품 문의</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint">아래로<span>↓</span></a>
+    </section>
+
+    <!-- 큰 문구 배너: images/banner.jpg -->
+    <section class="statement" style="--img: url('images/banner.jpg');">
+      <div class="statement-circle">
+        <p class="statement-big">신선함은 타협하지 않습니다</p>
+        <p class="statement-small">고르고, 지키고, 제때 전달하는 것.<br>CS FACTORY가 매일 지키는 약속입니다.</p>
       </div>
     </section>
 
-    <!-- 회사 소개 -->
+    <!-- 회사 소개: images/about.jpg -->
     <section id="about" class="section">
       <div class="container about">
+        <div class="about-photo" style="--img: url('images/about.jpg');" role="img" aria-label="CS FACTORY 물류 현장"></div>
         <div>
           <p class="eyebrow">About Us</p>
-          <h2>회사 소개</h2>
+          <h2>믿고 맡기는<br>식자재 파트너</h2>
           <p>CS FACTORY는 경기도 포천에 자리한 식품·식자재 유통 회사입니다.
             좋은 원재료를 꼼꼼하게 고르고, 고객이 필요한 양을 필요한 시간에 맞춰 전달합니다.</p>
           <p>매일 장사를 준비하는 사장님과 급식 현장의 부담을 덜어 드리는 든든한 식자재 파트너가 되겠습니다.</p>
+          <ul class="values">
+            <li><strong>신선</strong><span>엄선한 원재료</span></li>
+            <li><strong>정시</strong><span>약속한 시간 배송</span></li>
+            <li><strong>맞춤</strong><span>업장별 맞춤 공급</span></li>
+            <li><strong>안심</strong><span>철저한 위생 관리</span></li>
+          </ul>
         </div>
-        <ul class="stats">
-          <li><strong>신선</strong><span>엄선한 원재료</span></li>
-          <li><strong>정시</strong><span>약속한 시간 배송</span></li>
-          <li><strong>맞춤</strong><span>업장별 맞춤 공급</span></li>
-          <li><strong>안심</strong><span>철저한 위생 관리</span></li>
-        </ul>
       </div>
     </section>
 
-    <!-- 취급 품목 -->
-    <section id="services" class="section section-alt">
+    <!-- 취급 품목: images 폴더에 p1.jpg ~ p4.jpg -->
+    <section id="products" class="section section-cream">
       <div class="container">
-        <p class="eyebrow">Products</p>
-        <h2>취급 품목</h2>
-        <div class="cards cards-4">
-          <article class="card">
-            <div class="card-icon">🥬</div>
-            <h3>농산물</h3>
-            <p>채소, 과일, 양곡 등 매일 쓰는 신선 농산물을 공급합니다.</p>
+        <div class="section-head">
+          <p class="eyebrow">Products</p>
+          <h2>취급 품목</h2>
+          <p>주방에서 매일 쓰는 식자재를 한 곳에서 주문하세요.</p>
+        </div>
+        <div class="products">
+          <article class="product">
+            <div class="product-img" style="--img: url('images/p1.jpg'); --fallback: linear-gradient(135deg,#7fa65a,#3f7a3a);"><span>🥬</span></div>
+            <div class="product-body"><h3>농산물</h3><p>채소, 과일, 양곡 등 매일 쓰는 신선 농산물</p></div>
           </article>
-          <article class="card">
-            <div class="card-icon">🥩</div>
-            <h3>축산·수산물</h3>
-            <p>육류, 계란, 수산물을 냉장·냉동 상태 그대로 전달합니다.</p>
+          <article class="product">
+            <div class="product-img" style="--img: url('images/p2.jpg'); --fallback: linear-gradient(135deg,#c2512c,#7a2e1d);"><span>🥩</span></div>
+            <div class="product-body"><h3>축산·수산물</h3><p>육류, 계란, 수산물을 냉장·냉동 상태 그대로</p></div>
           </article>
-          <article class="card">
-            <div class="card-icon">🥫</div>
-            <h3>가공식품</h3>
-            <p>소스, 양념, 냉동식품, 면류 등 조리에 필요한 가공식품을 취급합니다.</p>
+          <article class="product">
+            <div class="product-img" style="--img: url('images/p3.jpg'); --fallback: linear-gradient(135deg,#d99a3d,#a8621f);"><span>🥫</span></div>
+            <div class="product-body"><h3>가공식품</h3><p>소스, 양념, 냉동식품, 면류 등 조리용 가공식품</p></div>
           </article>
-          <article class="card">
-            <div class="card-icon">📦</div>
-            <h3>공산품·소모품</h3>
-            <p>일회용품, 포장재 등 업장 운영에 필요한 물품도 함께 받아 보세요.</p>
+          <article class="product">
+            <div class="product-img" style="--img: url('images/p4.jpg'); --fallback: linear-gradient(135deg,#6f7d8c,#3e4a57);"><span>📦</span></div>
+            <div class="product-body"><h3>공산품·소모품</h3><p>일회용품, 포장재 등 업장 운영 필수품</p></div>
           </article>
         </div>
       </div>
@@ -93,24 +129,27 @@
     <!-- 강점 -->
     <section id="why" class="section">
       <div class="container">
-        <p class="eyebrow">Why CS FACTORY</p>
-        <h2>CS FACTORY를 선택하는 이유</h2>
-        <ol class="timeline">
-          <li><span class="year">한 번에 주문</span><p>여러 거래처를 거칠 필요 없이 필요한 식자재를 한 곳에서 주문할 수 있습니다.</p></li>
-          <li><span class="year">정시 배송</span><p>영업 준비에 차질이 없도록 약속한 시간에 맞춰 배송합니다.</p></li>
-          <li><span class="year">신선도 관리</span><p>냉장·냉동 품목은 온도를 지켜 보관하고 운송합니다.</p></li>
-          <li><span class="year">맞춤 상담</span><p>업장 규모와 메뉴에 맞춰 필요한 품목과 수량을 함께 고민합니다.</p></li>
+        <div class="section-head">
+          <p class="eyebrow">Why CS FACTORY</p>
+          <h2>CS FACTORY를 선택하는 이유</h2>
+        </div>
+        <ol class="reasons">
+          <li><span class="num">01</span><h3>한 번에 주문</h3><p>여러 거래처를 거칠 필요 없이 필요한 식자재를 한 곳에서 주문할 수 있습니다.</p></li>
+          <li><span class="num">02</span><h3>정시 배송</h3><p>영업 준비에 차질이 없도록 약속한 시간에 맞춰 배송합니다.</p></li>
+          <li><span class="num">03</span><h3>신선도 관리</h3><p>냉장·냉동 품목은 온도를 지켜 보관하고 운송합니다.</p></li>
+          <li><span class="num">04</span><h3>맞춤 상담</h3><p>업장 규모와 메뉴에 맞춰 필요한 품목과 수량을 함께 고민합니다.</p></li>
         </ol>
       </div>
     </section>
 
     <!-- 문의 -->
-    <section id="contact" class="section section-dark">
+    <section id="contact" class="contact-band">
       <div class="container contact">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>문의하기</h2>
-          <p>납품 문의, 품목·단가 상담은 전화로 편하게 연락 주세요.</p>
+          <h2>납품 문의</h2>
+          <p>품목·단가 상담은 전화로 편하게 연락 주세요.</p>
+          <a href="tel:0315433238" class="btn btn-white call">📞 031-543-3238</a>
         </div>
         <dl class="contact-list">
           <div><dt>주소</dt><dd>경기도 포천시 소흘읍 죽엽산로 269번길 36</dd></div>
@@ -122,14 +161,18 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p><strong>CS FACTORY</strong> | 대표 홍길동 | 사업자등록번호 000-00-00000</p>
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-logo">CS FACTORY</p>
+        <p>경기도 포천시 소흘읍 죽엽산로 269번길 36 · T. 031-543-3238</p>
+        <p>CS FACTORY · 대표 홍길동 · 사업자등록번호 000-00-00000</p>
+      </div>
       <p>© 2026 CS FACTORY. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    // 모바일 메뉴 열고 닫기
+    // 모바일 메뉴
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
     toggle.addEventListener('click', () => {
@@ -140,6 +183,33 @@
       nav.classList.remove('open');
       toggle.setAttribute('aria-expanded', false);
     }));
+
+    // 스크롤하면 상단 메뉴를 흰색으로
+    const header = document.querySelector('.header');
+    const onScroll = () => header.classList.toggle('solid', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll); onScroll();
+
+    // 배너 자동 슬라이드 (5초)
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dots button');
+    let cur = 0, timer;
+    const show = i => {
+      slides[cur].classList.remove('is-active'); dots[cur].classList.remove('is-active');
+      cur = i;
+      slides[cur].classList.add('is-active'); dots[cur].classList.add('is-active');
+    };
+    const start = () => { clearInterval(timer); timer = setInterval(() => show((cur + 1) % slides.length), 5000); };
+    dots.forEach((d, i) => d.addEventListener('click', () => { show(i); start(); }));
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) start();
+
+    // 사진 파일이 있으면 사진을, 없으면 색 배경을 보여 줌
+    document.querySelectorAll('[style*="--img"]').forEach(el => {
+      const m = el.getAttribute('style').match(/url\('([^']+)'\)/);
+      if (!m) return;
+      const img = new Image();
+      img.onload = () => el.classList.add('has-img');
+      img.src = m[1];
+    });
   </script>
 </body>
 </html>
