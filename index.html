@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OO컴퍼니 | 고객과 함께 성장하는 기업</title>
+  <meta name="description" content="OO컴퍼니 공식 홈페이지입니다. 회사 소개, 서비스, 연락처를 확인하세요.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 상단 메뉴 -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">OO<span>컴퍼니</span></a>
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="#about">회사 소개</a>
+        <a href="#services">서비스</a>
+        <a href="#history">연혁</a>
+        <a href="#contact" class="nav-cta">문의하기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 메인 배너 -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Since 2020</p>
+        <h1>고객의 내일을 함께<br>만들어 가는 회사</h1>
+        <p class="hero-text">OO컴퍼니는 믿을 수 있는 기술과 서비스로<br class="pc-only"> 고객의 문제를 해결하고 함께 성장합니다.</p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-primary">서비스 알아보기</a>
+          <a href="#contact" class="btn btn-ghost">문의하기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 회사 소개 -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h2>회사 소개</h2>
+          <p>OO컴퍼니는 2020년에 설립되어 고객 중심의 가치를 가장 중요하게 생각하는 회사입니다.
+            작은 일도 꼼꼼하게, 큰 일은 책임감 있게. 고객이 다시 찾는 파트너가 되는 것이 저희의 목표입니다.</p>
+          <p>이 문장은 예시입니다. 회사의 설립 배경, 비전, 강점을 2~3문장으로 적어 주세요.</p>
+        </div>
+        <ul class="stats">
+          <li><strong>6년</strong><span>업력</span></li>
+          <li><strong>300+</strong><span>함께한 고객사</span></li>
+          <li><strong>98%</strong><span>고객 만족도</span></li>
+          <li><strong>25명</strong><span>전문 인력</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 서비스 -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h2>서비스</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">01</div>
+            <h3>컨설팅</h3>
+            <p>고객의 상황을 정확히 진단하고 가장 알맞은 해결 방법을 제안합니다.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">02</div>
+            <h3>제품 개발</h3>
+            <p>기획부터 제작까지, 고객이 원하는 결과물을 책임지고 만들어 드립니다.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">03</div>
+            <h3>유지 관리</h3>
+            <p>완성 후에도 꾸준한 관리와 빠른 대응으로 안심하고 맡기실 수 있습니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 연혁 -->
+    <section id="history" class="section">
+      <div class="container">
+        <p class="eyebrow">History</p>
+        <h2>연혁</h2>
+        <ol class="timeline">
+          <li><span class="year">2026</span><p>누적 고객사 300곳 달성</p></li>
+          <li><span class="year">2024</span><p>신규 사업 부문 출범, 사옥 이전</p></li>
+          <li><span class="year">2022</span><p>기업부설연구소 설립</p></li>
+          <li><span class="year">2020</span><p>OO컴퍼니 설립</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 문의 -->
+    <section id="contact" class="section section-dark">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>문의하기</h2>
+          <p>궁금한 점이 있으시면 언제든 연락 주세요. 빠르게 답변드리겠습니다.</p>
+        </div>
+        <dl class="contact-list">
+          <div><dt>주소</dt><dd>서울특별시 OO구 OO로 123, 4층</dd></div>
+          <div><dt>전화</dt><dd><a href="tel:0212345678">02-1234-5678</a></dd></div>
+          <div><dt>이메일</dt><dd><a href="mailto:contact@example.com">contact@example.com</a></dd></div>
+          <div><dt>운영 시간</dt><dd>평일 09:00 ~ 18:00</dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>OO컴퍼니</strong> | 대표 홍길동 | 사업자등록번호 000-00-00000</p>
+      <p>© 2026 OO컴퍼니. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // 모바일 메뉴 열고 닫기
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', false);
+    }));
+  </script>
+</body>
+</html>
